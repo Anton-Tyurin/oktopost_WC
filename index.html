@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Social-Post_WC</title>
+    <script type="module" src="components/SocialPost/SocialPost.js"></script>
+    <script type="module" src="components/ThemeSwitcher/SocialPostThemeSwitcher.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Custom Components below</h1>
+      <div
+        style="
+          padding: 30px;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+          background: lightgray;
+        "
+      >
+        <post-theme-switcher target="social-post"></post-theme-switcher>
+        <social-post
+          display-name="Jane Doe"
+          username="@janedoe"
+          avatar="./img/avatar-svgrepo-com.svg"
+          text="dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+          timestamp="2h ago"
+          likes="5"
+        >
+        </social-post>
+        <social-post
+          display-name="Jane Doe"
+          username="@janedoe"
+          avatar="./img/avatar-svgrepo-com.svg"
+          text="dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+          timestamp="2h ago"
+          likes="42"
+        >
+          <button class="custom-action">some content in "post-tag"</button>
+        </social-post>
+      </div>
+    </main>
+  </body>
+</html>
